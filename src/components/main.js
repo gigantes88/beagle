@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import style from '../scss/style.scss';
 import message from '../img/icon_message.svg';
 import profile from '../img/icon_profile.svg';
+import arrow from '../img/icon_arrow_down.svg';
 // const cx = classNames.bind(style);
 
 export default class Main extends Component {
@@ -57,7 +58,27 @@ export default class Main extends Component {
 
           {/* main__filter */}
           <section className="main__filter">
-
+            <article>
+              <form>
+                <div className="main__filter--chat">
+                  <div className="main__filter--where">
+                    <strong>위치</strong>
+                    <a><p>어디로 가세요?</p><img src={arrow} /></a>
+                  </div>
+                  <div className="main__filter--date">
+                    <strong>일정</strong>
+                    <a><p>여행 날짜</p><img src={arrow} /></a>
+                  </div>
+                  <div className="main__filter--list">
+                    <strong>리스트</strong>
+                    <a><p>인기순</p><img src={arrow} /></a>
+                  </div>
+                  <div className="main__filter--search">
+                    <button type="button">search</button>
+                  </div>
+                </div>
+              </form>
+            </article>
           </section>
           {/* main__filter */}
 
