@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
-import style from '../scss/style.scss';
+import 'classnames';
+import '../scss/style.scss';
 import message from '../img/icon_message.svg';
 import profile from '../img/icon_profile.svg';
 import arrow from '../img/icon_arrow_down.svg';
@@ -15,7 +15,7 @@ export default class Main extends Component {
           <div className="header__container">
             {/* header__logo */}
             <div className="header__logo">
-              <h1>Beagle</h1>
+              <h1><a href="/">Beagle</a></h1>
             </div>
             {/* header__logo */}
 
@@ -44,7 +44,7 @@ export default class Main extends Component {
         {/* header */}
 
         {/* main */}
-        <main>
+        <main className="main">
           {/* main__banner */}
           <section className="main__banner">
             <article>
@@ -62,19 +62,19 @@ export default class Main extends Component {
               <form>
                 <div className="main__filter--chat">
                   <div className="main__filter--where">
-                    <strong>위치</strong>
-                    <a><p>어디로 가세요?</p><img src={arrow} /></a>
+                    <strong>도시</strong>
+                    <a><p>어디로 가세요?</p><img src={arrow} alt="도시 선택" /></a>
                   </div>
                   <div className="main__filter--date">
                     <strong>일정</strong>
-                    <a><p>여행 날짜</p><img src={arrow} /></a>
+                    <a><p>여행 날짜</p><img src={arrow} alt="출발 여행날짜 선택" /></a>
                   </div>
                   <div className="main__filter--list">
-                    <strong>리스트</strong>
-                    <a><p>인기순</p><img src={arrow} /></a>
+                    <strong>대화방 리스트</strong>
+                    <a><p>인기순</p><img src={arrow} alt="대화방 리스트 선택" /></a>
                   </div>
                   <div className="main__filter--search">
-                    <button type="button">search</button>
+                    <button type="button">검색</button>
                   </div>
                 </div>
               </form>
@@ -90,8 +90,8 @@ export default class Main extends Component {
         </main>
         {/* main */}
 
-        <footer>
-          <h5>Footer Beagle</h5>
+        <footer className="footer">
+          <h5>&#169; Beagle, Inc</h5>
         </footer>
       </section>
     );
