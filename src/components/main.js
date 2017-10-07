@@ -31,7 +31,7 @@ export default class Main extends Component {
                   </a>
                 </li>
                 <li>
-                  <a className="header__menu--profile menu_icon">
+                  <a className="header__menu--profile header__menu_icon">
                     <img src={profile} alt="프로필" />
                   </a>
                 </li>

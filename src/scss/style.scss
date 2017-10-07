@@ -1,9 +1,11 @@
 /* reset */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; 
@@ -88,8 +90,25 @@ ol, ul, a {
 
 /* main */
 /* main__banner */
-.main_banner {
-  
+.main__banner {
+  height: 397px;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  background: url(https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?dpr=1&auto=compress,format&fit=crop&w=1050&h=&q=80&cs=tinysrgb&crop=) no-repeat 0 45%;
+  background-size: cover;
+
+  article {
+    display:flex;
+    padding-top: 10%;
+    align-items: center;
+    width: 988px;
+    color: #fff;
+    h2 {
+      font-size: 72px;
+      font-weight: bold;
+    }
+  }
 }
 
 
